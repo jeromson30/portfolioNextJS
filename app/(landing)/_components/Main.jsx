@@ -4,24 +4,6 @@ import Image from 'next/image';
 import Marquee from "./Marquee";
 import Card from "./Cards";
 
-const menuList = [
-    {
-        item: "Accueil"
-    },
-    {
-        item: "Compétences"
-    },
-    {
-        item: "Projets"
-    },
-    {
-        item: "Contact"
-    },
-
-]
-
-
-
 export default function Main(){
     return(
         <main className="flex flex-col w-full items-start justify-center pt-8 select-none mx-auto mt-20">
@@ -59,7 +41,16 @@ export default function Main(){
                 <Marquee />
             </section>
             <section className="flex flex-col w-full items-center justify-center mt-20">
-                <h2 className="text-6xl font-bold p-5">Compétences</h2>
+                <h2 className="text-6xl font-bold p-5"><a id='Skills'>Compétences</a></h2>
+                <div className="flex flex-col p-10 items-center">
+                        <h3 className="text-3xl font-semibold p-10" >Formation</h3>
+                        <p>
+                        Juin 2024 à Décembre 2024<br/>
+                        OpenClassroom - Développeur informatique<br/>
+                        Diplome : licence (Bac +2)<br/>
+                        Déscriptif :<br/>
+                        </p>
+                </div>
                 <div className="flex flex-row items-start justify-center p-4">
                     <div className="flex flex-col p-10 items-center">
                         <h3 className="text-3xl font-semibold p-10" >Front-end</h3>

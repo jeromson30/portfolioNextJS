@@ -10,10 +10,12 @@ import { faLinkedin, faSquareInstagram, faSquareGithub } from '@fortawesome/free
 
 const menuList = [
     {
-        item: "Accueil"
+        item: "Accueil",
+        link: "#"
     },
     {
-        item: "Compétences"
+        item: "Compétences",
+        link: "#Skills"
     },
     {
         item: "Projets"
@@ -39,7 +41,7 @@ export default function Navbar(){
                 <NavigationMenuList className="flex justify-between items-center space-x-14 text-mg font-bold">
                         {menuList.map((link, index) => (
                             <NavigationMenuItem key={index} className="cursor-pointer hover:underline">
-                                {link.item}
+                                <a href={link.link}>{link.item}</a>
                             </NavigationMenuItem>
                         ))}
                 </NavigationMenuList>
