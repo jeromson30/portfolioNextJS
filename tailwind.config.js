@@ -14,7 +14,7 @@ module.exports = {
 		  keyframes: {
 			'infinite-scroll': {
 			  from: { transform: 'translateX(36%)' },
-			  to: { transform: 'translateX(calc(-33%))' }
+			  to: { transform: 'translateX(calc(-31%))' }
 			},
 		  },
   		colors: {

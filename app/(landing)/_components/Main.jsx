@@ -4,11 +4,12 @@ import Image from 'next/image';
 import Marquee from "./Marquee";
 import Card from "./Cards";
 
+
 export default function Main(){
     return(
         <main className="flex flex-col w-full items-start justify-center pt-8 select-none mx-auto mt-20">
-            <section className="flex flex-row w-full items-start justify-center">
-                <article className='w-[25%] h-[330px] group text-white flex flex-col pl-10 justify-center'>
+            <section className="flex flex-row w-full h-[460px] items-center justify-center">
+                <article className='w-[25%] h-full group text-white flex flex-col pl-10 justify-center'>
                     <h2 className="text-4xl font-extralight leading-relaxed">Salut!👋<br/>
                     Je m'appelle Jérôme<br/>
                     Je dev pour le web !</h2>
@@ -38,10 +39,10 @@ export default function Main(){
                 </article>
             </section>
             <section className="flex flex-row w-full items-start justify-center mt-20">
-                <Marquee />
+                    <Marquee />
             </section>
             <section className="flex flex-col w-full items-center justify-center mt-20">
-                <h2 className="text-6xl font-bold p-5"><a id='Skills'>Compétences</a></h2>
+                <h2 className="text-6xl font-bold p-5"><a id='GISkills'>Compétences</a></h2>
                 <div className="flex flex-col p-10 items-center">
                         <h3 className="text-3xl font-semibold p-10" >Formation</h3>
                         <p>
