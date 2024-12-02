@@ -33,10 +33,12 @@ const devLanguage = [
     
 ]
 
-export default function Marquee() {
+export default function Marquee(props) {
+    const isVisible = props.view
+
     return (
       <>
-        <div className='inline-flex w-full max-w-[1040px] text-5xl py-8 mx-auto content-center justify-center  flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-300px),transparent_100%)] '>
+        <div id='MarqueeLogos' className={`inline-flex w-full max-w-[1040px] text-5xl py-8 mx-auto content-center justify-center flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-300px),transparent_100%)] ${isVisible ? "active" : ""} `}>
           <ul className='flex items-center justify-center md:justify-start sm:[&_li]:mx-8 [&_li]:mx-4 [&_img]:max-w-none animate-infinite-scroll'>
             {devLanguage.map((e, index)=>(
                 <li key={index}>

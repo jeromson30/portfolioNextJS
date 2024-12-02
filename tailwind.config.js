@@ -13,8 +13,8 @@ module.exports = {
 		  },
 		  keyframes: {
 			'infinite-scroll': {
-			  from: { transform: 'translateX(36%)' },
-			  to: { transform: 'translateX(calc(-31%))' }
+			  from: { transform: 'translateX(34.8%)' },
+			  to: { transform: 'translateX(calc(-32%))' }
 			},
 		  },
   		colors: {

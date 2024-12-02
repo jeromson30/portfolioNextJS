@@ -7,6 +7,9 @@
 html {
   background: rgb(0,17,24);
   background: linear-gradient(144deg,rgb(0, 32, 65) 5%,rgb(0, 21, 44) 20%, rgba(0,17,24,1) 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 html, 
@@ -15,7 +18,8 @@ body,
   height: 100%;
 }
 
-.Profil {
+
+/* .Profil {
   padding: 20px;
   box-sizing: border-box;
   border-radius: 20px;
@@ -29,6 +33,45 @@ body,
   width: 150px;
   height: 150px;
   border-radius: 50%;
+} */
+
+header {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(-100%);
+}
+
+header.active {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+  transition: transform 200ms ease-in;
+}
+
+section {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+}
+
+section.active{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: transform 300ms ease-out 200ms;
+}
+
+#MarqueeLogos{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(200%);
+}
+
+#MarqueeLogos.active{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+  transition: transform 300ms ease 500ms;
 }
 
 @layer base {
@@ -94,6 +137,27 @@ body,
   }
   body {
     @apply bg-bggradient text-foreground;
+  }
+}
+
+@media only screen and (min-device-width : 768px) {
+  @keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+        filter: blur(5px);
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+        filter: blur(0px);
+    }
+  }
+
+  .animated {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry cover 30%;
   }
 }
 

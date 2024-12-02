@@ -34,9 +34,9 @@ function Card2() {
     setIsActive((prevState) => !prevState);
   };
   return (
-    <>
+    <div className='flex max-sm:flex-col'>
     {CardArr.map((data, index) => (
-    <div className="w-[350px] mx-auto" key={index}>
+    <div className="w-[350px] mx-10 max-sm:mt-10" key={index}>
       <div className="bg-gray-100 rounded-lg">
         <div className="w-full h-52 relative">
             <Image src={data?.img} key={index} alt={data?.title} width={100} height={100} className={`absolute h-52 w-full rounded-t-md  object-scale-down  ${selectedColor === data.color ? 'z-10 transition-all duration-500' : 'transition-all delay-500'}`} style={{clipPath:selectedColor === data.color
@@ -62,7 +62,7 @@ function Card2() {
       </div>
     </div>
     ))}
-    </>
+    </div>
   );
   
 }

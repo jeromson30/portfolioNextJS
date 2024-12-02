@@ -1,5 +1,4 @@
 "use client"
-
 import Navbar from "../../components/NavBar"
 import React, { useState, useEffect } from 'react';
 
@@ -12,7 +11,6 @@ export default function LandingLayout({ children }){
 
     return(
         <>
-            
             <Navbar view={isVisible}/>
             {children}
         </>

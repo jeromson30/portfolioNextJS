@@ -1,4 +1,5 @@
 import {Raleway} from "next/font/google";
+import BackgroundApp from "../components/BackgroundApp"
 import "./globals.css";
 
 const raleway = Raleway({
@@ -14,10 +15,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${raleway.variable} ${raleway.className} antialiased`}
-      >
+      <body className={` ${raleway.className} antialiased`}>
         {children}
+        <BackgroundApp/>
       </body>
     </html>
   );
