@@ -15,10 +15,18 @@ export default function skill_page(props) {
                 <div className="flex flex-col p-10 items-center">
                         <h3 className="text-3xl font-semibold p-10" >Formation</h3>
                         <p>
-                        Juin 2024 à Décembre 2024<br/>
-                        OpenClassroom - Développeur informatique<br/>
-                        Diplome : licence (Bac +2)<br/>
-                        Déscriptif :<br/>
+                            <span className='uppercase text-fuchsia-600 font-black'>OpenClassroom</span> : Juin 2024 à Décembre 2024 à temps plein<br/>
+                            Développeur informatique - Diplôme : licence (Bac +2)
+                        </p>
+                        <br/>
+                        <p>
+                            <span className='uppercase text-red-500 font-black'>M2I Formations</span> : 10 Novembre 2024 au 14 Novembre 2014<br/>
+                            Formation élaboration d’un cahier des charges (Projet SI)
+                        </p>
+                        <br/>
+                        <p>
+                            <span className='uppercase text-red-500 font-black'>M2I Formations</span> : Juin 2014<br/>
+                            Formation développement informatique langage C#
                         </p>
                 </div>
                 <div className="flex flex-row items-start justify-center p-4 max-sm:flex-col">
