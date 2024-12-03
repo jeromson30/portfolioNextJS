@@ -1,9 +1,6 @@
 "use client"
 import Link from "next/link"
 import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList } from "@radix-ui/react-navigation-menu"
-import Logo from "@/components/logo"
-import { Button } from "@/components/ui/button"
-import { LockedIcon } from "@/components/ui/iconsSVG"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquareEnvelope, faJ } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faSquareInstagram, faSquareGithub } from '@fortawesome/free-brands-svg-icons'
