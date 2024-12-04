@@ -1,9 +1,6 @@
 'use client';
 import React, { useState } from 'react';
 import Image from 'next/image';
-import * as Select from '@radix-ui/react-select';
-import { cn } from '@/lib/utils';
-import { motion } from 'framer-motion';
 
 
 export const CardArr = [
@@ -68,7 +65,7 @@ function Card2() {
     setIsActive((prevState) => !prevState);
   };
   return (
-    <div className='w-[60%] max-lg:w-[100%] max-lg:h-[100%]  flex flex-wrap gap-5 max-sm:flex-col max-sm:w-full mt-5'>
+    <div className='w-[60%] max-lg:w-[100%] max-lg:h-[100%] flex flex-wrap gap-5 max-sm:flex-col max-sm:w-full items-center justify-center mt-5'>
       {CardArr.map((data, index) => (
         <div className="w-[300px] h-full max-sm:mt-10" key={index}>
           <div className="bg-gray-100 rounded-lg">

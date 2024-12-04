@@ -19,9 +19,9 @@ export default function LandingPage() {
             Je suis passioné par le web & la tech !</h2>
         </article>
         
-        <div className="w-[12%] h-[50%] group bg-black border-0 rounded-t-2xl rounded-b-2xl text-white flex flex-col justify-center cursor-pointer max-md:min-w-[25%] max-lg:min-w-[25%] max-sm:w-[70%] max-sm:h-[70%]">
+        <div className="w-[12%] h-[50%] group bg-black border-0 rounded-t-2xl rounded-b-2xl text-white flex flex-col justify-center cursor-pointer min-w-[350px] max-lg:min-w-[200px] max-sm:min-w-[180px] max-sm:w-[70%] max-sm:h-[70%]">
             <Link href="https://www.linkedin.com/in/jeromecorso30150/" alt="Profil Linkedin" className='w-full h-full' target="_blank">
-                <div className="w-full rounded-t-2xl h-full group-hover:h-[480px] overflow-hidden transition-all duration-300">
+                <div className="w-full rounded-t-2xl h-full group-hover:h-[450px] max-sm:min-h-[60%] overflow-hidden transition-all duration-300">
                     <Image
                         src={'/profil.jpg'}
                         alt='photo de profil'
@@ -31,14 +31,10 @@ export default function LandingPage() {
                     />
                 </div>
                 <article className='relative overflow-hidden flex-grow rounded-b-2xl'>
-                    <div className='max-sm:h-[120px] info p-2 translate-y-0 group-hover:-translate-y-20 transition-all duration-300'>
+                    <div className='info p-2 translate-y-0 group-hover:-translate-y-100 transition-all duration-300'>
                         <p className='max-sm:text-base font-semibold'>Jérôme CORSO</p>
-                        <p className='max-sm:text-xs text-sm'>Developpeur Web </p>
-                        {/* &amp; CEO  */}
+                        <p className='max-sm:text-xs text-sm'>Developpeur Web</p>
                     </div>
-                    <button className='absolute h-10 -bottom-8 opacity-0 text-rose-400 group-hover:opacity-100 cursor-pointer group-hover:bottom-3  text-3xl font-medium transition-all duration-300 w-full text-center'>
-                        Developpeur Web 
-                    </button>
                 </article>
             </Link>
         </div>

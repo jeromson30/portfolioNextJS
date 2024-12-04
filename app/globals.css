@@ -157,7 +157,7 @@ section.active{
   .animated {
     animation: appear linear;
     animation-timeline: view();
-    animation-range: entry cover 30%;
+    animation-range: entry cover 23%;
   }
 }
 

@@ -11,9 +11,9 @@ export default function skill_page(props) {
   return (
     <main className="flex flex-col w-full items-start justify-center select-none mt-10">
             <section className={`flex flex-col w-full items-center justify-center ${isVisible ? "active" : ""} animated`} loading="lazy">
-                <h2 className="text-6xl font-bold p-5"><a id='GISkills'>Mes compétences</a></h2>
+                <h2 className="text-6xl max-sm:text-3xl font-bold p-5">Mes compétences</h2>
                 <div className="flex flex-col p-10 items-center">
-                        <h3 className="text-3xl font-semibold p-10" >Formation</h3>
+                        <h3 className="text-3xl max-sm:text-xl font-semibold p-10" >Formation</h3>
                         <p>
                             <span className='uppercase text-fuchsia-600 font-black'>OpenClassroom</span> : Juin 2024 à Décembre 2024 à temps plein<br/>
                             Développeur informatique - Diplôme : licence (Bac +2)

@@ -34,7 +34,7 @@ export default function Navbar(props){
                     <NavigationMenuItem>
                         <Link href="/" className="flex items-center space-x-2">
                             {/* <Logo /> */}
-                            <h2 className="text-2xl font-bold uppercase">[ Jeromson ]</h2>
+                            <h1 className="text-xl font-bold uppercase">[Jeromson]</h1>
                         </Link>
                     </NavigationMenuItem>
                 </NavigationMenuList>
