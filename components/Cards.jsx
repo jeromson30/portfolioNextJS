@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 
 export const CardArr = [
     {
-      img: '/booki.png',
+      img: '/Booki.png',
       title: 'Booki',
       color: '#202020',
       desc: "Projet Booki, création d'une page web responsive à partir d'une marquette Figma aux formats Desktop, Tablette et Mobile",
