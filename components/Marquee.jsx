@@ -42,17 +42,17 @@ export default function Marquee(props) {
           <ul className='flex items-center justify-center md:justify-start sm:[&_li]:mx-8 [&_li]:mx-4 [&_img]:max-w-none animate-infinite-scroll'>
             {devLanguage.map((e, index)=>(
                 <li key={index}>
-                    <img src={e.logo_url} alt={e.name} width="100px"/>
+                    <img src={e.logo_url} alt={e.name} className="w-[75px]"/>
                 </li>
             ))}
             {devLanguage.map((e, index)=>(
                 <li key={index}>
-                    <img src={e.logo_url} alt={e.name} width="100px"/>
+                    <img src={e.logo_url} alt={e.name} className="w-[75px]"/>
                 </li>
             ))}
             {devLanguage.map((e, index)=>(
                 <li key={index}>
-                    <img src={e.logo_url} alt={e.name} width="100px"/>
+                    <img src={e.logo_url} alt={e.name} className="w-[75px]"/>
                 </li>
             ))}
           </ul>

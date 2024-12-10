@@ -6,7 +6,7 @@
 
 html {
   background: rgb(0,17,24);
-  background: linear-gradient(144deg,rgb(0, 32, 65) 5%,rgb(0, 21, 44) 20%, rgba(0,17,24,1) 100%);
+  background-image: linear-gradient(to right bottom, #0064ff, #0057e0, #004ac2, #003ea4, #003288, #0f2b7b, #16246f, #191e63, #251962, #2f1460, #380b5d, #40005a);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;

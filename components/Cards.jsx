@@ -88,7 +88,7 @@ function Card2() {
               </p>
               <a href={data?.link} target="_blank">
                 <button className="w-full text-white flex justify-center items-center gap-2 bg-gradient-to-r dark:from-[#070e41] dark:to-[#263381] from-[#3e5068] to-[#0c1970] py-3 rounded-md">
-                  Afficher le projet
+                  {"</> Code source"}
                 </button>
               </a>
             </article>
